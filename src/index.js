@@ -38,7 +38,7 @@ searchForm.addEventListener('submit', async (event) => {
     page += 1;
 });
 
-loadMore.addEventListener('click', (event) => {
+loadMore.addEventListener('click', () => {
 	fetchImages(searchQuery, page)
 		.then(pics => {
 			if (pics.length < 12) {
